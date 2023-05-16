@@ -35,7 +35,8 @@ jobs:
 
       env:
         artifacts:
-        path: dist/abc
+        path: './dist/abc'
+        output-file-url: 'true'
 
     - name: Deploy
       run: aws s3 sync . s3://jirabucketformyproject 
