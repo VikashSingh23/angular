@@ -34,8 +34,8 @@ jobs:
       run: npm run build
 
     - name: Deploy
-      uses: deploy-s3-action@main
-     
+      run: aws s3 sync . s3://jirabucketformyproject  
+          
       env:
         artifacts:
         path: './dist/abc'
