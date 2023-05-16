@@ -34,4 +34,4 @@ jobs:
       run: npm run build:prod
 
     - name: Deploy
-      run: aws s3 sync ./dist/angular-github-actions-amazon-s3 s3://angular-github-actions-amazon-s3
+      run: aws s3 sync . s3://angular-github-actions-amazon-s3
