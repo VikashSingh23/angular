@@ -35,7 +35,7 @@ jobs:
 
 
 
-        env:
+      env:
         artifacts:
         file-path: './index.html'
         output-file-url: 'true'
