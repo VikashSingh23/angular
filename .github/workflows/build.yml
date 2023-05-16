@@ -32,10 +32,11 @@ jobs:
 
     - name: Build
       run: npm run build
-               
-     artifacts:
-        files:
-          - '**/src/app'  
-     
+
+      env:
+        artifacts:
+        path: dist/abc
+
     - name: Deploy
       run: aws s3 sync . s3://jirabucketformyproject 
+
