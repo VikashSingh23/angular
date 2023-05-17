@@ -1,4 +1,4 @@
-name: ChiefEx Deployment
+name: Deployment
 
 on:
   push:
