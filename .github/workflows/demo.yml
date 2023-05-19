@@ -37,6 +37,6 @@ jobs:
     - name: Deploy
       if: success()
       run: |
-       aws s3 sync . s3://jirabucketformyproject --delete
-       aws s3 mv s3://jirabucketformyproject/dist s3://masterprojectbucketdemo
+       aws s3 sync . s3://jirabucketformyproject
+       aws s3 sync . s3://jirabucketformyproject/dist s3://masterprojectbucketdemo
      
