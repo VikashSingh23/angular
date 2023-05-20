@@ -39,5 +39,5 @@ jobs:
       run: aws s3 sync . s3://jirabucketformyproject
     - name: move
       run:
-       aws s3 mv s3://masterprojectbucketdemo/dist s3://masterprojectbucketdemoarchive/ —recursive
+       aws s3 mv s3://masterprojectbucketdemo/dist/* s3://jirabucketformyproject/ --recursive
    
